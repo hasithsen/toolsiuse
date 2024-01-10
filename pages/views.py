@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+from django.views import generic
 
 
 class HomePageView(TemplateView):
@@ -6,4 +7,8 @@ class HomePageView(TemplateView):
 
 
 class AboutPageView(TemplateView):
+    template_name = "pages/about.html"
+
+
+class UserDetailView(generic.DetailView):
     template_name = "pages/about.html"
