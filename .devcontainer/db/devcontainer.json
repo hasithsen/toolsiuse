@@ -1,0 +1,8 @@
+{
+    "name": "db",
+    "dockerComposeFile": [
+        "../../docker-compose.yaml"
+    ],
+    "service": "db",
+    "workspaceFolder": "/var/lib/postgresql/data"
+}
